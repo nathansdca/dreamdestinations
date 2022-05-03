@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Helpful meta tags-->
+    <meta name="author" content="Nathan Cheng">
+    <meta name="description" content="Dream Destinations is a personal, private travel blog by Nathan Cheng.">
+    <meta name="keywords" content="dream, destinations, travel, blog, explore, itinerary, map">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--font is open sans (sans-serif) semi-bold 600-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!--font is architects daughter (handwriting) regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <!--font is domine (serif) regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <!--can also try Montserrat (sans-serif)-->
+
+    <!--Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/f8fd2d4efb.js" crossorigin="anonymous"></script>
+
+    <!--My CSS Styles-->
+    <link rel="stylesheet" href="dream.css">
+    <link rel="stylesheet" href="articles.css">
+
+    <title>Paris, France</title>
+</head>
+
+<!--Begin Content-->
+
+<body>
+
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light px-2">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="home.html" id="brand">
+                <img src="images/hot-air-balloon.png" width="30" height="30" class="d-inline-block align-top" alt="hot air balloon"><i>Dream Destinations</i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Continents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="https://www.lonelyplanet.com/europe" target="_blank">Europe</a></li>
+                            <li><a class="dropdown-item" href="https://www.lonelyplanet.com/asia" target="_blank">Asia</a></li>
+                            <li><a class="dropdown-item" href="https://www.lonelyplanet.com/africa" target="_blank">Africa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSubMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+                            <li><a class="dropdown-item" href="venice.html">Venice</a></li>
+                            <li><a class="dropdown-item" href="vietnam.html">Hạ Long Bay</a></li>
+                            <!--<li><a class="dropdown-item" href="#">All Destinations</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://nathancheng.000webhostapp.com/webd152/webd168/bootstrapintro/mypage/allaboutmebootstrap.html" target="_blank">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Hero Image and Fast Facts-->
+
+    <div class="container">
+        <!--container maybe...could let stretch all the way to end-->
+        <div class="row py-4">
+            <div class="col-md-8">
+                <div class="card text-white" style="border: none;">
+                    <img src="images/paris-2.jpg" class="card-img" alt="blurred image of Notre Dame cathedral" id="header-img">
+                    <div class="d-flex justify-content-center align-items-center card-img-overlay">
+                        <div class="text-white">
+                            <h1 class="card-title" id="no-gradient">7 Days in Paris</h1>
+                            <h3 class="card-text">The Ultimate Itinerary for Paris in One Week</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4 fast-facts">
+                <div class="card-body">
+                    <h2><span>Fast Facts</span></h2>
+                    <ul class="card-text">
+                        <li>Currency: EUR (€)</li>
+                        <li>Language Spoken: French</li>
+                        <li>Population: 2.1 million</li>
+                        <li>Time Zone: UTC/GMT +1 hour</li>
+                        <li>Best Time to Visit: <br> Spring (Apr-Jun) <br> Fall (Sept-Nov) <br> Christmas</li>
+                        <li><a href="https://en.parisinfo.com/" target="_blank">Official Website</a></li>
+                        <li><a href="https://worldinparis.com/7-days-in-paris-in-one-week" target="_blank">Itinerary Credit: <i>World in Paris: Travel Tips by Locals</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!--IDK WHERE TO PUT THIS INFO!!!!
+        Day 1 – Ile de la Cité and the Marais
+        Day 2 – Louvre Museum and the Historical Axis of Paris
+        Day 3 – The Latin Quarter and Saint Germain des Prés
+        Day 4 – Day trip to Versailles
+        Day 5 – Canal Saint-Martin /Bassin de la Villette and Montmartre
+        Day 6 – Palais Royal, Opera, Grands Boulevards
+        Day 7 – Orsay Museum, Eiffel Tower, and Seine River boat tour-->
+
+
+        <!--Main: Left Column: Visiting // Right Column: Agenda-->
+
+
+        <!--Day 1-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 1: Ile de la Cité and the Marais</h5>
+                        <ul class="card-text">
+                            <li>Notre Dame Cathedral (from outside)</li>
+                            <li>Sainte Chapelle</li>
+                            <li>Conciergerie</li>
+                            <li>Marché aux Fleurs</li>
+                            <li>Place Dauphine – Square du Vert Galant</li>
+                            <li>Place des Vosges</li>
+                            <li>Musée Carnevalet</li>
+                        </ul>
+                    </div>
+                    <img src="images/paris-pics/sainte-chapelle.jpg" class="card-img-bottom" alt="Stained Glass in Sainte-Chapelle">
+                    <p class="card-text"><i>Stained glass windows of Sainte-Chapelle, a royal palace in the Gothic style</i></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning</h5>
+                        <p class="card-text">Start your trip exploring Ile de la Cité, the biggest island on the Seine River, and Paris’s beating heart.</p>
+                        <p class="card-text">In Medieval times, Ile de la Cité was the center of Paris, home to the royal palace and the main religious and institutional buildings. As such, you will find interesting medieval sites like Notre Dame Cathedral, the Conciergerie, or the Sainte Chapelle. It is simply not enough to see those landmarks from the outside – you need to be inside!</p>
+                        <p class="card-text">Follow the map and visit all the suggested sites or only the ones that interest you most. On the island’s western tip, the Square du Vert Galant is a good place for a quick picnic while watching the riverboats sail by.</p>
+                        <h5 class="card-title">Afternoon</h5>
+                        <p class="card-text">After the so much-needed lunch, cross the Seine River to the right bank through Pont Neuf, which is the oldest bridge in Paris. Then, you can take the metro line 1 from Châtelet to Saint Paul (2 stations) or walk along the quay to the east to Le Marais.</p>
+                        <p class="card-text">Le Marais, one of the most beautiful areas in all of Paris, well known for its elegant mansions, gorgeous hotels, art galleries, and quaint little cafés. Start the Marais walking tour from Place des Vosges, one of the most beautiful royal squares in Paris and also the oldest. Then, be sure to visit the Village Saint Paul, and the Carnevalet Museum if you want to learn more about the history of Paris. Behind the museum, the tranquil Square George Caïn is the perfect place for a rest before dinner.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 2-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 2: Louvre Museum and the Historical Axis of Paris</h5>
+                        <ul class="card-text">
+                            <li>Louvre Museum</li>
+                            <li>Tuileries Garden</li>
+                            <li>Place de la Concorde</li>
+                            <li>Pont Alexandre III – Grand Palais – Petit Palais (from outside)</li>
+                            <li>Champs Elysées</li>
+                            <li>Arc de Triomphe</li>
+                        </ul>
+                    </div>
+                    <img src="images/paris-pics/louvre.jpg" class="card-img-bottom" alt="Louvre Pyramid">
+                    <p class="card-text"><i>Glass pyramid of the Louvre, designed by I.M. Pei</i></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning</h5>
+                        <p class="card-text">Start the day exploring the Louvre, the world’s best museum! Because there is so much to see, we recommend checking out this Louvre Museum guide to prepare for the visit.</p>
+                        <h5 class="card-title">Afternoon</h5>
+                        <p class="card-text">After visiting the Louvre, head outdoors for a stroll through the Tuileries Garden. While you just can walk down the main lane, perhaps with a quick stop at one of the cafes, we recommend a self-guided treasure hunt to learn the history behind the oldest garden in Paris.</p>
+                        <p class="card-text">At the other side of the Tuileries Garden, there’s Place de la Concorde, the witness of some of the most terrible chapters of the French Revolution, like the execution of King Louis XVI and Queen Marie-Antoinette. Don’t miss the Luxor obelisk – the oldest monument in Paris – brought directly from Egypt!</p>
+                        <p class="card-text">Walk along the Champs Elysées, the most famous avenue in Paris, and enjoy its atmosphere and window shops, perhaps with a short detour to admire the architecture of Grand Palais and Petit Palais from outside and the iconic Alexandre III Bridge.</p>
+                        <p class="card-text">To end the day, climb up to the top of Arc de Triomphe for one of the best Eiffel Tower views. Commissioned in 1806 by Napoleon I to honor the Grande Armée, this triumphal arch 55m high is inspired by the arches of Roman times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 3-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 3: The Latin Quarter and Saint Germain des Prés</h5>
+                        <ul class="card-text">
+                            <li>Saint-Germain-des-Près Abbey</li>
+                            <li>Saint Sulpice Church</li>
+                            <li>Luxembourg Gardens</li>
+                            <li>Panthéon</li>
+                            <li>Arènes de Lutèce</li>
+                            <li>Jardin des Plantes</li>
+                        </ul>
+                    </div>
+                    <img src="images/paris-pics/luxembourg-gardens.jpg" class="card-img-bottom" alt="Jardin du Luxembourg">
+                    <p class="card-text"><i>Jardin du Luxembourg, one of Paris's oldest gardens</i></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning</h5>
+                        <p class="card-text">Today you will be exploring the Seine's left bank. Start with a coffee at Saint-Germain-des-Prés, one of the most beautiful neighborhoods in Paris. Before the 12th century, it was a rural village outside Paris built around the former Saint-Germain Abbey. Stroll around the neighborhood, visiting the suggested points of interest. On the way, you will see many fancy cafes, art galleries, luxury shops, and boutique hotels. When you are done exploring Saint Germain, you will be within walking distance of the beautiful Luxembourg Gardens.</p>
+                        <p class="card-text">The Luxembourg Gardens were commissioned by Queen Marie de Médicis (the widow of King Henri IV) in 1612. Inspired by the Boboli Gardens in Florence, where the Queen was born, the gardens surround the Luxembourg Palace, today home to the French Senate. Enjoy 23 hectares of pure bliss! If the weather is good, consider a picnic in the park or another fun treasure hunt.</p>
+                        <h5 class="card-title">Afternoon</h5>
+                        <p class="card-text">The Latin Quarter is set east of Luxembourg Gardens. While it is known as the center of university life in Paris, it’s also where the Roman Paris-Lutetia was born in IC AD. You can view the Roman Baths (from outside) at Boulevard Saint Michel and visit the Arènes de Lutèce – the Roman amphitheater.</p>
+                        <p class="card-text">The rest of the day is dedicated to exploring this area, with an interesting combination of historical sites, lively streets and squares, small bookstores, and independent cinemas proposing auteur films. Whilst strolling around the Latin Quarter, don’t miss the street food Rue Mouffetard, the lively Place de la Contrescarpe, the Jardin des Plantes and the visit to the Panthéon, with the tombs of the most notable citizens of France.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 4-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 4: Day trip to Versailles (Busy Tuesdays and Weekends)</h5>
+                        <ul class="card-text">
+                            <li>Palace of Versailles</li>
+                            <li>The Trianons and the Queen’s Hamlet</li>
+                            <li>The Gardens of Versailles</li>
+                        </ul>
+                    </div>
+                    <img src="images/paris-pics/versailles.jpg" class="card-img-bottom" alt="The Palace of Versailles">
+                    <p class="card-text"><i>The Palace of Versailles, built by King Louis XIV</i></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Whole Day</h5>
+                        <p class="card-text">When you have a week in Paris, you don’t have an excuse not to visit the famous Versailles Palace!</p>
+                        <p class="card-text">Versailles Palace is one of the royal castles near Paris and one of the most beautiful castles in France. Built in baroque style, Versailles was home to three French Kings and their families (King Louis XIV, King Louis XV, and King Louis XVI) until the French Revolution.</p>
+                        <p class="card-text">If you are truly interested in learning about Versailles history, take a guided tour that includes transportation to/from Paris. If you prefer a self-guided visit instead, check out a quick Versailles Guide.</p>
+                        <p class="card-text">From April to the end of October, the Gardens of Versailles host beautiful shows, with music, costumes, and the fountains of Versailles running. There’s an entrance fee to visit these shows, but it is totally worth it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 5-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 5: Northern Paris</h5>
+                        <ul class="card-text">
+                            <li>Canal Saint-Martin</li>
+                            <li>Bassin de la Villette</li>
+                            <li>Montmartre – Sacré Cœur</li>
+                            <li>Moulin Rouge</li>
+                        </ul>
+                    </div>
+                    <img src="images/paris-pics/sacre-coeur.jpg" class="card-img-bottom" alt="Basilique du Sacre-Coeur">
+                    <p class="card-text"><i>The Basilica of the Sacred Heart of Paris (Sacre Coeur), a Roman Catholic church</i></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning</h5>
+                        <p class="card-text">One week in Paris truly gives you time to explore the lesser-known neighborhoods! This beautiful and trendy part of town is the place to be. It may lack museums and monuments but don’t worry; there’s just as much to do and see.</p>
+                        <p class="card-text">Canal Saint-Martin is a cultural hub and one of the most popular places in Paris, with cute cafés and vintage shops along its quays. Bassin de La Villette – Canal de l’Ourcq has a more local feeling, with more things to do along the canal. A fun thing to do at Bassin de la Villette is to sail an electric boat along the canal (no boating license required), perhaps with a bottle of rosé wine onboard.</p>
+                        <h5 class="card-title">Afternoon</h5>
+                        <p class="card-text">Take the metro at Stalingrad to the Anvers station (line 2) to explore the bohemian neighborhood of Montmartre. For your visit to Montmartre, we suggest following a self-guided Montmartre Walking Tour, starting from the Sacré Coeur, which explores the main sights of Montmartre while learning the history of this picturesque neighborhood. If you want to go beyond the main sights, check out a Secret Map of Montmartre with some favorite spots off the beaten path.</p>
+                        <p class="card-text">To end the day, enjoy a cabaret show at the Moulin Rouge, one of the most famous cabarets in Paris. Expect an entertaining show of music and dance and the famous French can-can.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 6-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 6: Palais Royal, Opera, Grands Boulevards</h5>
+                        <ul class="card-text">
+                            <li>Gardens of Palais Royal</li>
+                            <li>Galerie Vivienne – Galerie Colbert</li>
+                            <li>Place Vendôme</li>
+                            <li>Opéra Garnier</li>
+                            <li>Galeries Lafayette</li>
+                        </ul>
+                    </div>
+                    <img src="images/paris-pics/galeries.jpg" class="card-img-bottom" alt="Galeries Lafayette Shopping Mall">
+                    <p class="card-text"><i>Galeries Lafayette, a large department store complex, on Boulevard Haussman</i></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning</h5>
+                        <p class="card-text">Start the day at the Gardens of Palais Royal. Commissioned by Cardinal Richelieu in 1633, the Palais Royal housed royal families until the Palace of Versailles was built. Prestigious and peaceful, the gardens are surrounded by beautiful magnolia trees and classic sculptures. You can see the famous 260 black and white striped Buren Columns in the courtyard near the garden.</p>
+                        <p class="card-text">North of Palais Royal, you will find two of the most beautiful covered passages in Paris: Galerie Vivienne and Galerie Colbert. Built in the 19th century, these arcades covered with glass roofs, are a typically Parisian architectural feature and they house vintage shops, tearooms, and restaurants.</p>
+                        <p class="card-text">Walk west to Place Vendôme, one of the most elegant squares in Paris. Dominated by the Vendôme Column, crowned by Napoleon I’s statue, it is home to the Hotel Ritz Paris and luxury shops.</p>
+                        <h5 class="card-title">Afternoon</h5>
+                        <p class="card-text">In the afternoon, visit the Opéra Garnier with a guided tour in English. Designed by Charles Garnier, this building is a masterpiece of 19th-century theatrical architecture.</p>
+                        <p class="card-text">Later, stroll through the Grands Boulevards for some shopping. This area of Paris is part of the major renovation works commissioned by Emperor Napoléon III and carried out by Baron Haussman. The works included the demolition of medieval neighborhoods considered overcrowded and healthy. The perfect way to end this day is by visiting Galeries Lafayette’s rooftop bar, from where you can enjoy one of the most breathtaking views of Paris.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 7-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 7: Orsay Museum, Eiffel Tower, and Seine Cruise</h5>
+                        <ul class="card-text">
+                            <li>Orsay Museum</li>
+                            <li>Eiffel Tower</li>
+                            <li>Seine River Cruise</li>
+                        </ul>
+                    </div>
+                    <img src="images/paris-pics/musee-dorsay.jpg" class="card-img-bottom" alt="The Musee d'Orsay">
+                    <p class="card-text"><i>The Musee d'Orsay, located on the bank of the Seine with the Eiffel Tower in the background</i></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Morning</h5>
+                        <p class="card-text">Another favorite to visit is the Orsay Museum. Set in a former train station, the Orsay Museum holds mainly French art from the period 1848 to 1914 and includes artworks of Van Gogh, Gauguin, and the Impressionists. Even if you’re not into art galleries, a visit here is well worth it, just to see the stunning train station, a jewel of Art Déco architecture! Plan on being there for at least 2 hours.</p>
+                        <p class="card-text">Head to Champ de Mars to visit Paris’ most iconic monument: the Eiffel Tower! If you haven’t had lunch yet, Champ de Mars is one of the best spots for a picnic in Paris.</p>
+                        <h5 class="card-title">Afternoon</h5>
+                        <p class="card-text">Head to Champ de Mars to visit Paris’ most iconic monument: the Eiffel Tower! If you haven’t had lunch yet, Champ de Mars is one of the best spots for a picnic in Paris.</p>
+                        <p class="card-text">After your Eiffel Tower experience, what better way to finish off this week in Paris than taking a cruise down the River Seine. Enjoy a different perspective of Paris from the water. A great boat tour with dinner we recommend is the one with Bateaux Parisiens. Enjoy a delicious bistro menu while admiring the most famous Paris landmarks, magically illuminated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Close Container Div-->
+
+
+    <!--use if you want col-md-3 to go above col-md-9 when screen shrinks-->
+    <!--
+    <div class="container">
+        <div class="row flex-column-reverse flex-md-row">
+            <div class="col-md-9"></div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    -->
+
+
+    <!--Footer-->
+
+    <footer class="page-footer pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/hagia-sophia.jpg" class="img-fluid" alt="the Hagia Sophia mosque">
+                        <div class="overlay">
+                            <h6 class="text-white">Istanbul <br> Turkey</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/cape-town.jpg" class="img-fluid" alt="aerial view of Cape Town">
+                        <div class="overlay">
+                            <h6 class="text-white">Cape Town <br> South Africa</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/serengeti.jpg" class="img-fluid" alt="giraffes on the Serengeti">
+                        <div class="overlay">
+                            <h6 class="text-white">Serengeti <br> Tanzania</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/machu-picchu.jpg" class="img-fluid" alt="Machu Picchu">
+                        <div class="overlay">
+                            <h6 class="text-white">Machu Picchu <br> Peru</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/iguazu.jpg" class="img-fluid" alt="Iguazú Falls">
+                        <div class="overlay">
+                            <h6 class="text-white">Iguazú Falls <br> Argentina</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/opera-house.jpg" class="img-fluid" alt="Sydney Opera House">
+                        <div class="overlay">
+                            <h6 class="text-white">Sydney <br> Australia</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © Copyright 2021 <i class="fas fa-globe"></i> Dream Destinations <i class="fas fa-globe"></i> Created by Nathan Cheng <i class="fas fa-globe"></i> All Rights Reserved
+        </div>
+    </footer>
+
+
+    <!--Scroll to Top-->
+
+    <button onclick="topFunction()" id="top-button"><i class="fas fa-arrow-up"></i>top</button>
+
+
+    <!--JS for scroll to top button-->
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("top-button");
+
+        // When the user scrolls down 50px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+
+    <!--Optional Javascript-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

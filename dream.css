@@ -1,0 +1,273 @@
+/*
+Egyptian Blue – #043263
+Peacock Blue – #01AFD1
+Dodger Blue – #239EFE
+Malibu Blue – #7DBAFB
+Blue Daze – #DBE5FF, alternate #E6ECFF (lighter)
+Color between White Smoke and White (off-white) - #F8F8F8
+*/
+
+/*tineye.com is a reverse image search: find iStock photos for free*/
+
+/*https://miketricking.github.io/bootstrap-image-hover/# had different hover options*/
+
+/*https://www.sarahtitus.com/25-best-travel-destinations-color-palettes/*/
+
+/*https://tablericons.com/*/
+
+/*screenshot image, crop it, and set constraints to 3:2 so that all images are the same dimensions when using cards*/
+
+/*https://autoprefixer.github.io/ adds the vendor prefixes*/
+
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #01AFD1;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: #7DBAFB;
+    font-size: 120%;
+}
+
+#brand {
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.1rem;
+    font-weight: 800;
+}
+
+#header-img {
+    -webkit-filter: blur(3px) brightness(70%);
+            filter: blur(3px) brightness(70%);
+    opacity: 0.85;
+}
+
+h1 {
+    font-family: 'Architects Daughter', cursive;
+    letter-spacing: 0.35rem;
+    font-weight: 900;
+    /*900 is greater than bold (700)*/
+    color: #F8F8F8;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hor-line {
+    text-align: center;
+    background-color: #DBE5FF;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border: none;
+    /*not sure if I like the border around h2*/
+}
+
+no-border {
+    border: none;
+}
+
+/*this is the horizontal line*/
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.2em solid #043263;
+    line-height: 0em;
+    margin: 20px 0 20px;
+}
+
+/*this is the content between the lines*/
+h2 span {
+    background: #DBE5FF;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0 1rem;
+}
+
+#pad-1 {
+    padding: 1em;
+}
+
+.mb-3 {
+    background-color: #F8F8F8;
+}
+
+.color-change:hover {
+    background-color: #F8F8F8;
+    opacity: 0.8;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #239EFE;
+}
+
+.tabs {
+    text-align: center;
+    word-spacing: 0.5rem;
+    margin: 1rem;
+}
+
+.card {
+    border: 0.3rem solid #043263;
+}
+
+.card-img-overlay {
+    text-align: center;
+}
+
+.card-text,
+.continent {
+    font-family: 'Domine', serif;
+}
+
+
+.btn {
+    background-color: #043263;
+    /*for now keep it white text on dark bg, but it doesn't match with navbar, which should be similar*/
+}
+
+
+/*Map Styles*/
+
+#pad-2 {
+    padding: 1.7em;
+}
+
+#map {
+    background-color: #F8F8F8;
+    border: 0.3rem solid #043263;
+}
+
+.card-body {
+    padding: 0.5em;
+}
+
+.map-container-5 {
+    overflow: hidden;
+    position: relative;
+    height: 0;
+}
+
+.map-container-5 iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /*smaller width shrinks map size*/
+    position: absolute;
+}
+
+footer {
+    background-color: #7DBAFB;
+}
+
+.footer-copyright {
+    padding: 2rem;
+}
+
+/*Image Hover*/
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    border-bottom: 1px solid #F8F8F8;
+    border-top: 1px solid #F8F8F8;
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    -o-transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h6 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    background-color: transparent;
+    color: #F8F8F8;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    -o-transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+}
+
+.hovereffect a,
+.hovereffect p {
+    color: #F8F8F8;
+    padding: 1em 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    -o-transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+}
+
+.hovereffect:hover a,
+.hovereffect:hover p,
+.hovereffect:hover h6 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

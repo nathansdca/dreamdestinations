@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Helpful meta tags-->
+    <meta name="author" content="Nathan Cheng">
+    <meta name="description" content="Dream Destinations is a personal, private travel blog by Nathan Cheng.">
+    <meta name="keywords" content="dream, destinations, travel, blog, explore, itinerary, map">
+
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--font is open sans (sans-serif) semi-bold 600-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <!--font is architects daughter (handwriting) regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <!--font is domine (serif) regular 400-->
+    <link href="https://fonts.googleapis.com/css2?family=Domine&display=swap" rel="stylesheet">
+    <!--can also try Montserrat (sans-serif)-->
+
+    <!--Fontawesome Icons-->
+    <script src="https://kit.fontawesome.com/f8fd2d4efb.js" crossorigin="anonymous"></script>
+
+    <!--My CSS Styles-->
+    <link rel="stylesheet" href="dream.css">
+    <link rel="stylesheet" href="articles.css">
+
+    <title>Venice, Italy</title>
+</head>
+
+<!--Begin Content-->
+
+<body>
+
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light px-2">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="home.html" id="brand">
+                <img src="images/hot-air-balloon.png" width="30" height="30" class="d-inline-block align-top" alt="hot air balloon"><i>Dream Destinations</i>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Continents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="https://www.lonelyplanet.com/europe" target="_blank">Europe</a></li>
+                            <li><a class="dropdown-item" href="https://www.lonelyplanet.com/asia" target="_blank">Asia</a></li>
+                            <li><a class="dropdown-item" href="https://www.lonelyplanet.com/africa" target="_blank">Africa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSubMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Destinations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="paris.html">Paris</a></li>
+                            <li><a class="dropdown-item" href="venice.html">Venice</a></li>
+                            <li><a class="dropdown-item" href="vietnam.html">Hạ Long Bay</a></li>
+                            <!--<li><a class="dropdown-item" href="#">All Destinations</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://nathancheng.000webhostapp.com/webd152/webd168/bootstrapintro/mypage/allaboutmebootstrap.html" target="_blank">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Hero Image and Fast Facts-->
+
+    <div class="container">
+        <!--container maybe...could let stretch all the way to end-->
+        <div class="row py-4">
+            <div class="col-md-8">
+                <div class="card text-white" style="border: none;">
+                    <img src="images/venice-practice.png" class="card-img" alt="" id="header-img">
+                    <div class="d-flex justify-content-center align-items-center card-img-overlay">
+                        <div class="text-white">
+                            <h1 class="card-title" id="no-gradient">3 Days in Venice</h1>
+                            <h3 class="card-text">Venice Itinerary: Planning Your Time</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-md-4 fast-facts">
+                <div class="card-body">
+                    <h2><span>Fast Facts</span></h2>
+                    <ul class="card-text">
+                        <li>Currency: EUR (€)</li>
+                        <li>Language Spoken: Italian</li>
+                        <li>Population: 260 thousand</li>
+                        <li>Time Zone: UTC/GMT +1 hour</li>
+                        <li>Best Time to Visit: <br> Fall (Sept-Nov) <br> Spring (late Mar-Apr)</li>
+                        <li><a href="https://www.visitvenezia.eu/en" target="_blank">Official Website</a></li>
+                        <li><a href="https://www.ricksteves.com/europe/italy/venice-itinerary" target="_blank">Itinerary Credit: <i>Rick Steves' Europe</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Intro-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Intro</h5>
+                        <p class="card-text">Venice is small. You can walk across it, from head to tail, in about an hour. Nearly all of your sightseeing is within a 20-minute walk of the Rialto Bridge or St. Mark's Square. Remember that Venice itself is its greatest sight. Make time to wander, explore, shop, and simply be. When you cross a bridge, look both ways — you may be hit with a lovely view. Venice has what's considered one of the highest concentrations of art anywhere in the world. Art lovers need to be particularly well-organized to get the most out of their visit.</p>
+                        <p class="card-text">Key considerations: Ninety percent of tourists congregate in a very narrow zone in the center. But even the most touristy stretches of the city are almost ghostly peaceful early and late. Maximize your evening magic, and avoid the midday crowds around St. Mark's Basilica and the Doge's Palace. If you arrive in Venice late in the day, try taking a self-guided Grand Canal cruise and St. Mark's Square tour. These sights are more romantic and much less crowded after dark — and they provide a wonderful welcome to the city.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Main: Left Column: Agenda // Right Column: Photo/s-->
+
+
+        <!--Day 1-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 1</h5>
+                        <ul class="card-text">
+                            <li>Night Before: Walk or boat to the train station and then, aboard an empty vaporetto #1, take a self-guided "Grand Canal Cruise" to St. Mark's Square</li>
+                            <li>9:00 Ride to the top of the Campanile.</li>
+                            <li>10:00 Explore St. Mark's Square. Pop into a glass shop for a glass-blowing demo.</li>
+                            <li>11:00 Meander from St. Mark's Square to the Rialto Bridge, ideally off the main thoroughfares, as far as the Rialto Bridge.</li>
+                            <li>13:00 Lunch.</li>
+                            <li>14:00 Tour the Correr Museum (ticket purchased includes Doge's Palace).</li>
+                            <li>15:30 Tour St. Mark's Basilica (closes at 17:00 in summer, at 16:00 in winter; best with a self-guided tour).</li>
+                            <li>17:00 Visit the Doge's Palace (in summer closes at 19:00, last entry at 18:00; closes earlier in winter).</li>
+                            <li>19:00 Dinner (if a nice one, make a reservation) and maybe a gondola ride (or vice versa, as a gondola ride at sunset is best).</li>
+                            <li>22:00 Enjoy a drink with the orchestras on St. Mark's Square.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                            <img class="card-img" src="images/venice-pics/doges-palace.jpg" alt="Doge's Palace">
+                            <p class="card-text"><i>The Doge's Palace, built in the Venetian Gothic Style</i></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                            <img class="card-img" src="images/venice-pics/st-marks-basilica.jpg" alt="St. Mark's Basilica">
+                            <p class="card-text"><i>St. Mark's Basilica, dedicated to the city's patron saint</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 2-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 2</h5>
+                        <ul class="card-text">
+                            <li>9:00 Enjoy the action at the Rialto Bridge and Rialto Market.</li>
+                            <li>10:00 Make your way to the Frari Church via the San Polo neighborhood while taking a self-guided tour.</li>
+                            <li>11:00 Tour the Frari Church (also covered by a free audio tour).</li>
+                            <li>12:00 Wander into the Dorsoduro district toward Ca' Rezzonico, exploring and enjoying lunch along the way. (Visit Scuola San Rocco only if you're an art lover.)</li>
+                            <li>14:00 Tour Ca' Rezzonico (Museum of 18th-Century Venice, closed Tue).</li>
+                            <li>16:00 Tour the Accademia museum (only if you're an art lover), then stroll across the Accademia Bridge and back to St. Mark's Square.</li>
+                            <li>18:00 Commence pub crawl for dinner.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                            <img class="card-img" src="images/venice-pics/rialto-bridge.jpg" alt="Rialto Bridge">
+                            <p class="card-text"><i>Rialto Bridge, the oldest of four bridges spanning the Grand Canal</i></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                            <img class="card-img" src="images/venice-pics/ca-rezzonico-palace.jpg" alt="Ca' Rezzonico Palace">
+                            <p class="card-text"><i>Ca' Rezzonico, a palace and museum with Venetian paintings from the 1700s</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Day 3-->
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-body">
+                        <h5 class="card-title">Day 3</h5>
+                        <ul class="card-text">
+                            <li>9:00 Catch boat at Fondamente Nove to San Michele (old cemetery), then continue to Murano.</li>
+                            <li>11:00 Tour Murano, and (on weekdays) see glassworks.</li>
+                            <li>13:00 Boat to Burano for lunch and browsing.</li>
+                            <li>15:00 Boat to Torcello, tour church, back to Burano.</li>
+                            <li>18:00 Zip back to Fondamente Nove in 45 minutes, or — if you'd like to see more of the lagoon — take the long way back by boat via the mainland peninsula of Cavallino and the Lido (no need to stop there — just enjoy the cruise).</li>
+                            <li>20:00 Dinner and/or concert in Venice.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                            <img class="card-img" src="images/venice-pics/murano-glass-mask.jpg" alt="Murano Glass and Mask">
+                            <p class="card-text"><i>Murano's souvenirs include glassware and Venetian Carnival masks</i></p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6">
+                            <img class="card-img" src="images/venice-pics/burano-canal.jpg" alt="Burano Canal">
+                            <p class="card-text"><i>Burano is known for its lacemaking and colorful homes</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Extras-->
+
+
+        <div class="card day mb-3">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card-body">
+                        <h5 class="card-title">Extras</h5>
+                        <p class="card-text">Shop and browse some of Venice's more characteristic areas (such as the zone between Campo Santa Margarita and Campo San Barnaba; the back lanes of Cannaregio, near the Jewish Ghetto; or the sleepy part of Dorsoduro behind the Accademia and Guggenheim).</p>
+                        <p class="card-text">Visit the Church of San Giorgio Maggiore.</p>
+                        <p class="card-text">Side-trip to Padua (30–50 minutes away by train).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Close Container Div-->
+
+
+    <!--Footer-->
+
+    <footer class="page-footer pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/hagia-sophia.jpg" class="img-fluid" alt="the Hagia Sophia mosque">
+                        <div class="overlay">
+                            <h6 class="text-white">Istanbul <br> Turkey</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/cape-town.jpg" class="img-fluid" alt="aerial view of Cape Town">
+                        <div class="overlay">
+                            <h6 class="text-white">Cape Town <br> South Africa</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/serengeti.jpg" class="img-fluid" alt="giraffes on the Serengeti">
+                        <div class="overlay">
+                            <h6 class="text-white">Serengeti <br> Tanzania</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/machu-picchu.jpg" class="img-fluid" alt="Machu Picchu">
+                        <div class="overlay">
+                            <h6 class="text-white">Machu Picchu <br> Peru</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/iguazu.jpg" class="img-fluid" alt="Iguazú Falls">
+                        <div class="overlay">
+                            <h6 class="text-white">Iguazú Falls <br> Argentina</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
+                    <div class="hovereffect">
+                        <img src="images/opera-house.jpg" class="img-fluid" alt="Sydney Opera House">
+                        <div class="overlay">
+                            <h6 class="text-white">Sydney <br> Australia</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © Copyright 2021 <i class="fas fa-globe"></i> Dream Destinations <i class="fas fa-globe"></i> Created by Nathan Cheng <i class="fas fa-globe"></i> All Rights Reserved
+        </div>
+    </footer>
+
+
+    <!--Scroll to Top-->
+
+    <button onclick="topFunction()" id="top-button"><i class="fas fa-arrow-up"></i>top</button>
+
+
+    <!--JS for scroll to top button-->
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("top-button");
+
+        // When the user scrolls down 50px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
+
+
+    <!--Optional Javascript-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

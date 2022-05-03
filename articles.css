@@ -1,0 +1,67 @@
+span {
+    font-size: 80%;
+}
+
+#no-gradient {
+    background-image: none;
+}
+
+.fast-facts {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#DBE5FF));
+    background-image: -o-linear-gradient(#F8F8F8, #DBE5FF);
+    background-image: linear-gradient(#F8F8F8, #DBE5FF);
+    border: 0.3em solid #043263;
+    background-color: #F8F8F8;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #239EFE;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.day {
+    border: none;
+}
+
+.col-md-6 {
+    padding: 1.5em;
+}
+
+.card-title {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#DBE5FF), to(#F8F8F8));
+    background-image: -o-linear-gradient(#DBE5FF, #F8F8F8);
+    background-image: linear-gradient(#DBE5FF, #F8F8F8);
+}
+
+#top-button {
+    display: none;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 99;
+    font-size: 18px;
+    border: 1px solid #043263;
+    outline: none;
+    background-color: #043263;
+    color: #F8F8F8;
+    cursor: pointer;
+    padding: 0.3em 0.6em;
+    border-radius: 50%;
+}
+
+#top-button:hover {
+    background-color: #F8F8F8;
+    color: #043263;
+}
+
+.vietnam {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#DFDFDF));
+    background-image: -o-linear-gradient(#F8F8F8, #DFDFDF);
+    background-image: linear-gradient(#F8F8F8, #DFDFDF);
+}
